@@ -15,7 +15,7 @@ public class Main {
     static Scanner s = new Scanner(System.in);
 
     public static void main(String[] args) {
-        bascara();
+        pitagoras();
     }
 
     public static void tabuada() {
@@ -47,6 +47,16 @@ public class Main {
         double x1 = ((-b + Math.sqrt(delta)) / (2 * a));
         double x2 = ((-b - Math.sqrt(delta)) / (2 * a));
         System.out.println("X1 = " + x1 +" e x2 = "+x2);
+    }
+    
+    public static void pitagoras(){
+        System.out.println("Informe A:");
+        int a = s.nextInt();
+        System.out.println("Informe B:");
+        int b = s.nextInt();
+        double catetos = (a*a) + (b*b);
+        double hipotenusa = Math.sqrt(catetos);
+        System.out.println("Hipotenusa: "+ hipotenusa);
     }
 }
 
